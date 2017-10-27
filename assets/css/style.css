@@ -5,29 +5,49 @@ body {
 .headerwrapper {
     background-color: #ffffff;
     display: flex;
+    align-items: center; 
     font-family: Georgia, 'Times New Roman', Times, serif;
-        
+    
 }
+
+
+
+        
+
 .header {
     flex: 1;  
     margin-left: 100px; 
+    
+
+  
 
 }
 h1 {
     background-color: #4aaaa5;
     text-align: center;
     color: white;
-    padding: 2em;
+    padding: 1em;
     width: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    
     
    }
 
 .headerlinks {
     flex: 5;  
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+    
+    
+    
 }
+.a:hover{
+    text-decoration: none;
+    color: #4aaaa5;
 
+}
 a:link {
     text-decoration: none;
     color: grey;
@@ -66,12 +86,13 @@ li {
 
 .main {
     background-color: #ffffff;
-    flex: 2;
-    width: 650px;
+    flex: 3;
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    height: 400px;
+
    
  
 
@@ -81,28 +102,36 @@ li {
     color: #4aaaa5;
     text-align: center;
     background-color: #ffffff;
-    flex: 1;
-    padding: .1em;
-    Height: 185px;
+    padding: 1em;
+    Height: 150px;
     margin-right: 100px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 50px;
-    margin-bottom: 25px;
-   
+    margin-bottom: 500px;
+    float: left; 
+       
+      
 }
 
+#light {
+    margin: 10px;
+}
 
 .header2 {
     color: #4aaaa5;
-    padding: .25em;
+    padding: 1em;
     border-bottom: 5px solid lightgrey;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 650px;
+    font-size: 25px;
+    font-weight: bold;
+    
 }
 
 #header2 {
     border-bottom: 5px solid lightgrey;
-    padding: .25em;
+    font-size: 25px;
+    font-weight: bold;
 
 }
 
@@ -121,7 +150,6 @@ li {
 .contact {
     background-color: #ffffff;
     flex: 2;
-    width: 650px;
     margin-top: 25px;
     margin-bottom: 25px;
 
@@ -134,6 +162,8 @@ li {
     padding: 2em;
     color: white;
     border-top: 10px solid #4aaaa5;
+    float: left;
+    width: 100%;
 }
 
 .contactmain {
@@ -143,24 +173,6 @@ li {
     margin-top: 25px;
     margin-bottom: 25px;
     height: 500px;
-}
-
-.portfoliofooter {
-    background-color: darkgrey;
-    height: 20px;
-    text-align: center;
-    padding: 2em;
-    color: white;
-    border-top: 10px solid #4aaaa5;
-}
-
-.portfoliomain {
-    background-color: #ffffff;
-    width: 675px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    height: 950px;
-   
 }
 
 form {
@@ -179,34 +191,119 @@ form {
     font-size: 16px;
 }
 
-.bannerlabel {
+
+.portfoliomain {
+    background-color: #ffffff;
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 800px;
+    margin-left: 100px;
+    float: left;
+    
+ 
+    
+   }
+
+.hangman {
+    position: relative;
+    margin-top: 5px;
+    flex: 1;
+}
+
+.hangmanlabel {
+    position: absolute; bottom: 0; left: 0;
     background-color: #4aaaa5;
     padding: 1em;
     color: white;
     width: 218px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    
-      
 }
 
-.bannerphoto {
-     flex: 50%;
-     margin-left: 30px;
-     margin-top: 10px;
-    
-             
+.rpg {
+    position: relative;
+    margin-top: 5px;
+    flex: 1;
+}
+
+.rpglabel {
+    position: absolute; bottom: 0; left: 0;
+    background-color: #4aaaa5;
+    padding: 1em;
+    color: white;
+    width: 218px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .toprow {
     display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    
     
 }
 
 .middlerow {
     display: flex;
-    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.bottomrow {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 15px;
     
 }
 
+.trivia {
+    position: relative;
+    margin-top: 5px;
+    flex: 1;
+    
+}
+
+.trivialabel {
+    position: absolute; bottom: 0; left: 0;
+    background-color: #4aaaa5;
+    padding: 1em;
+    color: white;
+    width: 218px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rutgers {
+    position: relative;
+    margin-top: 5px;
+    flex: 1;
+}
+
+.rutgerslabel {
+    position: absolute; bottom: 0; left: 0;
+    background-color: #4aaaa5;
+    padding: 1em;
+    color: white;
+    width: 218px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rock {
+    position: relative;
+    margin-top: 5px;
+    flex: 1;
+}
+
+.rocklabel {
+    position: absolute; bottom: 0; left: 0;
+    background-color: #4aaaa5;
+    padding: 1em;
+    color: white;
+    width: 218px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
